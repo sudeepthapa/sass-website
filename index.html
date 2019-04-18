@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background">&nbsp; </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Your Benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img class="header__logo" src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Explore</span>
+                <span class="heading-primary--sub">We Provide Guide</span>
+            </h1>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover Here</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-large">
+                <h2 class="heading-secondary">
+                    Exciting tours for adventurous people.
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        You are going to fall in love with the nature.
+                    </h3>
+                    <p class="paragraph">
+                        ipsum dolor sit, amet consectetur adipisicing elit. Doloremque possimus vero molestiae
+                        neque animi, ipsam cupiditate alias ipsa quidem sint modi, incidunt illum non nihil quibusdam
+                        placeat ullam, ab ea.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Live adventure like you never have before.
+                    </h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sapiente nostrum eos quae, hic
+                        reolor sit amet consectetur, adipisicingadipisici ng.
+                    </p>
+                    <a href="#" class="btn-text">Learn more &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="images/bali-2975787_960_720.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img src="images/butterfly-3986915_960_720.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img src="images/harley.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-world"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, dolores! Lorem ipsum
+                            dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Meet Nature</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, dolores! Lorem ipsum
+                            dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, dolores! Lorem ipsum
+                            dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">live a healthier life</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, dolores! Lorem ipsum
+                            dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tours Section -->
+
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-large">
+                <h2 class="heading-secondary">
+                    Most popular tours.
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">This Sea Adventure</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>2 Days Tour</li>
+                                    <li>Tour Guide</li>
+                                    <li>Hotel Placement</li>
+                                    <li>Beautiful Places</li>
+                                    <li>Wonderful Tour</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$666</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">WebSite Scrapping</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>2 Days Tour</li>
+                                    <li>Tour Guide</li>
+                                    <li>Hotel Placement</li>
+                                    <li>Beautiful Places</li>
+                                    <li>Wonderful Tour</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$876</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">Mountain Climbing</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>2 Days Tour</li>
+                                    <li>Tour Guide</li>
+                                    <li>Hotel Placement</li>
+                                    <li>Beautiful Places</li>
+                                    <li>Wonderful Tour</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$226</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-text u-margin-top-big">
+                <a href="#" class="btn btn--green">Discover all tours</a>
+            </div>
+        </section>
+
+
+
+        <!-- Stories Section -->
+        <section class="section-stories">
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="./images/Designer.mp4" type="video/mp4">
+                    video not supported!!
+                </video>
+            </div>
+
+            <div class="u-center-text u-margin-bottom-large">
+                <h2 class="heading-secondary">
+                    We make customers happy
+                </h2>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./images/deadvlei-2011373_960_720.jpg" class="story__img" alt="">
+                        <figcaption class="story__caption">Desert</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">I had a best time with my family and
+                            friends.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis, quos architecto officiis
+                            soluta voluptate beatae ex amet quasi tempore, illo accusantium! Voluptatem mollitia quasi
+                            quod, dolore tempora laborum autem dicta?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./images/gallery-1727481_1280.png" class="story__img" alt="">
+                        <figcaption class="story__caption">Gallery Image</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Enjoy the photographs in the beach.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis, quos architecto officiis
+                            soluta voluptate beatae ex amet quasi tempore, illo accusantium! Voluptatem mollitia quasi
+                            quod, dolore tempora laborum autem dicta?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./images/harley.jpg" class="story__img" alt="">
+                        <figcaption class="story__caption">Ride harley</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Harley Ride in the open place.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis, quos architecto officiis
+                            soluta voluptate beatae ex amet quasi tempore, illo accusantium! Voluptatem mollitia quasi
+                            quod, dolore tempora laborum autem dicta?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-text">Read all stories &rarr;</a>
+            </div>
+        </section>
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class=" u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start Booking Now
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Enter Email" id="email" required>
+                                <label for="email" class="form__label">Enter Email</label>
+                            </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" id="small" name='size' class="form__radio-input">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small Tour Group
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" id="large" name='size' class="form__radio-input">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large Tour Group
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next Step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="./images/compass-1753659_960_720.jpg" alt="logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__copyright">
+                    Built By <a href="#" class="footer__link">Sudip Thapa</a>. Copyright &copy; by Sudip Thapa. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam provident, perspiciatis
+                    nostrum voluptate doloremque eius magni dolorum deleniti aliquid!
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="./images/compass-1753659_960_720.jpg" class="popup__img" alt="">
+                <img src="./images/student-849821_960_720.jpg" alt="" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking.</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident, molestias, harum odio
+                    fugit ea temporibus recusandae tempora ullam incidunt dignissimos fuga aspernatur maiores. Et
+                    molestias velit at dolores soluta quaerat illo impedit optio, iusto delectus ex maiores modi quis
+                    enim, numquam vitae harum deleniti reprehenderit maxime sunt incidunt corrupti  maiores modi quis
+                    enim, numquam vitae harum deleniti reprehenderit maxime sunt incidunt corrupti?
+                </p>
+                <a href="#" class="btn btn--green">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-2-of-3">
+                col-2-of-3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-2-of-4">
+                col-2-of-4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-3-of-4">
+                col-3-of-4
+            </div>
+        </div>
+
+
+    </section> -->
+
+</body>
+
+</html>
